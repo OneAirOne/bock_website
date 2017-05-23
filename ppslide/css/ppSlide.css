@@ -1,0 +1,26 @@
+
+#slider-wrapper {
+	width:500px;
+	height:250px;
+	position:relative;
+	margin:20px auto;
+}
+
+#ppSlide-info {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:#000;
+	color:#fff;
+	z-index:600;
+	-moz-opacity:0.75;
+	opacity: 0.75;
+	filter:alpha(opacity=75);
+}
+
+#ppSlide-info p {
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	font-size:12px;
+	padding:5px;
+}

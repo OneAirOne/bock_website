@@ -1,0 +1,174 @@
+/********************************************************************************************* 
+    Document   : style
+    Created on : 5 sept. 2013, 13:31:18
+    Author     : Krafty
+    Description: qJJWYVtxhYOm
+        Purpose of the stylesheet follows.
+**********************************************************************************************/
+
+/*CORRECTIONS CSS*/
+a{ color:#0072bc; cursor:pointer; text-decoration:none;}/*correction police liens*/
+ol,ul{list-style:none;}/*suppression puces*/
+strong{font-weight: normal;}
+/*PROPRIETES RESET*/
+.cb{clear: both;}
+
+/*PROPRIETE HTML permet aux autres block d'être à 100% de la page*/
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  
+}
+/*mots_cles*/#mot{display:none;}
+
+/* H2 */
+h2{font-family:'TitilliumText Regular';font-size: 24px; font-weight: normal; line-height: 42px;  color:#453f41;/*#e9f55e*/ }
+
+/* FONT EXOTIQUE titillium */
+@font-face {
+font-family: 'TitilliumText Regular';
+src: url('font/TitilliumTextRegular-webfont.eot');
+src: url('font/TitilliumTextRegular-webfont.eot?#iefix') format('embedded-opentype'),
+url('font/TitilliumTextRegular-webfont.woff') format('woff'),
+url('font/TitilliumTextRegular-webfont.ttf') format('truetype'),
+url('font/TitilliumTextRegular-webfont.svg#TitilliumText Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+body{background:url(img/bkg-right.jpg)repeat;font-family: Arial,Verdana,sans-sherif; font-size:12px;}
+html, body #left{height:100%;z-index:1;}
+
+
+/*LEFT */
+#left{width: 15%;position: fixed;}
+#left.bkg{background:url(img/bkg-left.jpg)repeat;z-index:2;}
+ul#nav{/*white-space: normal;*/font-family: 'TitilliumText Regular';padding-right: 0px;}
+ul#nav li a{ max-width: 100%;/*overflow: hidden;*/word-wrap:  break-word;/*border: 1px solid black*/;font-size:3.5em;color:#000000;text-transform: uppercase;}  
+
+
+
+ul#nav li a:hover{color: #FFF;}  
+ul#nav li a.active{color: #FFF;}
+
+
+
+
+/* RIGHT */
+#right{/*border:2px solid #dcdede;*/font-size:12px;line-height: 16px;width:75%;float:right;margin-right: 2%;/*border:2px solid #dcdede;*/}
+/*mise en forme responsive*/
+#home{width: 95%;}
+.page{width:1500px;/*1600px*/margin-bottom: 30px; padding: 40px 10px 10px 30px;}
+.page h2{text-align:right;line-height:30px;}
+.sub-title{text-align:right;font-size:12px;color:#dcdede;border-bottom:2px solid #dcdede;padding-bottom:10px;}
+
+/*HOME*/
+#home{overflow:hidden;}/* cache tt ce qui dépasse*/
+.about-text{/*border:2px solid #dcdede;*/width:50%;padding-top:50px;margin-left:auto;margin-right:auto;text-align: center; }
+.about-text p{font-size:12px;line-height:20px;color:black;text-align:justify;padding-bottom:2px;display:block;}
+/*.separator{border-bottom: 1px dashed #dcdede;height:1px;margin-bottom:50px;}*/
+/*slider{display:block;margin:auto; width:570px; height:220px;}*/
+
+
+
+/*#RIGHT - #FOLIO */
+#portfolio{width:100%;/*border:2px solid #dcdede;*/padding-left: 2px}
+#content_iphone{display: none;}
+
+#content a{width:200px;height:200px;display:block;float:left; position:relative;text-decoration: none;}
+#content a img{border: none;width:200px;height:200px;}
+#content a span{position:absolute;top:25px;left:25px; display: none;}
+#content a:hover span{display: block;}
+#content span.title{top:60px;color:#FFF; font-weight:bold; font-size:1.2em;z-index:2;}
+#content span.descr{top:90px;color:#BABABA;  font-size:0.9em;z-index:2;}
+#content span.bg{position:absolute;top:0;left:0;width: 200px;height:200px;background:#000;z-index:1;}
+/*#content span.bg{position:absolute;top:0;left:0;width: 200px;height: 200px;background:rgba(0,0,0,0.7);}*/
+
+
+
+/*#RIGHT - #CONTACT */
+#contact{width: 95%;display:block;clear: both;text-align: center;/*border:2px solid #dcdede;*/}/* le clear permet d'annuler l'effet du float précedent*/
+#contact .bloc{ padding-top:40px;width:400px;text-align:justify; float:left;}
+#contact .bloc.a{color:#e9f55e;}
+
+#contact .bloc h3{padding-bottom:2px;font-family: 'TitilliumText Regular';font-size:18px;font-weight:bold;line-height: 22px;color:#453f41;text-transform: uppercase;}
+contact.bloc p{font-size:12px;line-height: 18px;color: black;margin-top:10px;margin-bottom:10px;text-align:justify;}
+label{font-size:12px;float:left;color:#453f41;width:70px;padding-top:4px;/*centrer les label*/}
+.text{color:#8c8c8c;width:255px;margin-bottom: 20px;padding:3px;}
+.submit{cursor:pointer;border: none;background: #ed4e6e;color:#FFF;margin-bottom: 20px;padding:4px;margin-left:70px;}
+
+/* SIGNATURE*/
+#signature_blanc{width:60%;height:22%;position: absolute;text-align: center;padding-bottom: 10px;padding-left: 0px;bottom: 0%;right: 0%;}
+
+/*WEBMASTER*/
+#webmaster{font-size:10px;text-align: right;}
+
+
+
+
+/*RESPONSIVE*/
+
+/*ecranclassique */
+@media only screen 
+and (max-width: 1500px) 
+/*and (min-device-width : 768px)*//* 
+and (max-device-width : 1024px)*/ {
+   ul#nav li a { font-size:2em;}
+}
+/*ecranclassique IPAD*/
+@media only screen 
+and (max-width: 768px) 
+/*and (min-device-width : 768px)*//* 
+and (max-device-width : 1024px)*/ {
+   ul#nav li a { font-size:1.5em;}
+}
+/*ecranIphone*/
+@media only screen 
+/*and (min-device-width : 320px)*/
+and (max-width: 560px)
+/*and (max-device-width : 480px)*/{
+   ul#nav li{padding: 0; margin: 0;text-align: center; /* centrer le texte */}
+   ul#nav li{ display: inline;list-style: none;}
+   ul#nav a { display:inline-block; margin: 0 2px;  }
+   #signature_blanc{display:none}
+  
+   /*LEFT */
+   #left{width: 100%;position:device-fixed;z-index:1;}
+   html, body #left{height:40px;}
+   ul#nav li{ display:inline-block;/*suppression du retour à la ligne des puces*/margin-right:0px;} 
+     
+   
+    /* RIGHT */
+   #cache {display: none;}
+   
+   #home{width: 100%;padding-left:0}
+   #right{/*border:2px solid #dcdede;*/text-align:left;display:block;font-size:12px;line-height: 16px;width:100%;margin:0;padding-top:30px;;/*border:2px solid #dcdede;*/}
+   #content_iphone{display:block; width: 100%;margin: 0;  height: 100%;top: 0;;padding: 0}
+   #content_iphone ul{width:100%;height:100%;padding: 0;margin:0;}
+   #content_iphone img{height:100%;width: 100%;display:block;padding: 0;margin: 0;}
+   #portfolio{width:100%;margin:0;padding :0;height:100%;}
+  
+   
+   
+ 
+
+
+   #contact{width: 100%;margin:0px;padding:3px;}
+   .page h2{text-align:left;line-height:30px;}
+   .sub-title{text-align:left;font-size:12px;color:#dcdede;border-bottom:2px solid #dcdede;padding-bottom:8px;}
+   .bloc h3{width:50%;text-align:left; font-size: 10px;}
+   .bloc p{width:50%;text-align:left;}
+   contact.bloc p{font-size:10px;line-height: 18px;color: black;margin-top:10px;margin-bottom:10px;text-align:justify;}
+   label{font-size:10px;float:left;color:#453f41;width:70px;padding-top:4px;/*centrer les label*/}
+   .text{color:#8c8c8c;width:200px;margin-bottom: 20px;padding:3px;}
+   #form{width:40%;}
+   /*WEBMASTER*/
+   #webmaster{font-size:10px;text-align: left;margin-left:7%;}
+}
+
+   
